@@ -1,0 +1,45 @@
+Tuyệt vời! Đây là bộ dữ liệu về bất động sản (Ames Housing) với rất nhiều biến mô tả tính chất đất, nhà, tiện ích… Để cùng nhau phân tích, chúng ta có thể đi qua các bước sau:
+
+Tải và khám phá dữ liệu
+
+Đọc file CSV/Excel vào DataFrame (pandas).
+
+Xem nhanh df.head(), df.info(), df.describe() để hiểu kiểu dữ liệu, số lượng bản ghi, missing value.
+
+Tiền xử lý (Data Cleaning & Preprocessing)
+
+Xử lý các giá trị thiếu (NA) tùy biến:
+
+Với cột numeric (LotFrontage, MasVnrArea…) có thể dùng trung bình/median hoặc dự đoán.
+
+Với cột categorical (Alley, FireplaceQu…) có thể xem NA có ý nghĩa “không có” hay thực sự thiếu.
+
+Chuẩn hóa tên cột (loại bỏ khoảng trắng), chuyển kiểu categorical thành category trong pandas.
+
+Mã hóa biến (Encoding)
+
+Biến nhị phân (CentralAir) có thể map thành 0/1.
+
+Biến ordinal (OverallQual, ExterQual…) có thứ tự: có thể map thành số tương ứng.
+
+Các biến nominal (Neighborhood, MSSubClass…) dùng one-hot encoding hoặc target encoding tuỳ mục đích.
+
+Thống kê mô tả & Trực quan hóa
+
+Phân phối biến mục tiêu (SalePrice) – histogram, boxplot.
+
+Mối tương quan (correlation) giữa SalePrice và các biến số: heatmap, scatter plot với biến quan trọng (GrLivArea, TotalBsmtSF…).
+
+So sánh giá theo nhóm Neighborhood, OverallQual: boxplot nhóm.
+
+Phân tích nâng cao / Mô hình hóa
+
+Xây dựng mô hình hồi quy tuyến tính đơn giản, rồi nâng cao (Ridge, Lasso, XGBoost…) để dự đoán SalePrice.
+
+Đánh giá model bằng RMSE, MAE, R² trên tập validation.
+
+Kết luận & Kiến nghị
+
+Tóm tắt biến nào ảnh hưởng mạnh nhất tới giá.
+
+Đề xuất cải thiện nhà/pháp lý dựa trên insights.
