@@ -1,12 +1,19 @@
-Tuyệt vời! Đây là bộ dữ liệu về bất động sản (Ames Housing) với rất nhiều biến mô tả tính chất đất, nhà, tiện ích… Để cùng nhau phân tích, chúng ta có thể đi qua các bước sau:
 
-Tải và khám phá dữ liệu
-
-Đọc file CSV/Excel vào DataFrame (pandas).
-
-Xem nhanh df.head(), df.info(), df.describe() để hiểu kiểu dữ liệu, số lượng bản ghi, missing value.
 
 Tiền xử lý (Data Cleaning & Preprocessing)
+
+Xử lý các giá trị bị thiếu:
+Nhập các giá trị số bị thiếu (ví dụ: sử dụng phương pháp trung bình, trung vị hoặc phương pháp phức tạp hơn).
+Gán các giá trị danh mục bị thiếu (ví dụ: sử dụng giá trị thường xuyên nhất hoặc danh mục mới như "Thiếu").
+Mã hóa các biến danh mục:
+Sử dụng mã hóa one-hot cho các biến danh mục danh nghĩa (ví dụ: MSZoning, Neighborhood).
+Sử dụng mã hóa nhãn hoặc mã hóa thứ tự cho các biến danh mục thứ tự (ví dụ: OverallQual, ExterQual).
+Kỹ thuật tính năng:
+Tạo các tính năng mới từ các tính năng hiện có (ví dụ: kết hợp năm xây dựng và năm cải tạo).
+Chia tỷ lệ các tính năng số:
+Sử dụng StandardScaler hoặc MinMaxScaler để chia tỷ lệ các tính năng số.
+Xử lý các giá trị ngoại lai:
+Xác định và loại bỏ hoặc chuyển đổi các giá trị ngoại lai trong các tính năng số.
 
 Xử lý các giá trị thiếu (NA) tùy biến:
 
